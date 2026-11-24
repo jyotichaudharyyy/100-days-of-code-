@@ -1,0 +1,63 @@
+/*
+DAY 81
+
+Q131 (Enum):
+Create an enumeration for days (SUNDAY to SATURDAY)
+and print each day with its integer value.
+*/
+
+#include <stdio.h>
+
+enum Day
+{
+    SUNDAY,
+    MONDAY,
+    TUESDAY,
+    WEDNESDAY,
+    THURSDAY,
+    FRIDAY,
+    SATURDAY
+};
+
+int main()
+{
+    enum Day day;
+
+    printf("Days and their integer values:\n");
+
+    for(day = SUNDAY; day <= SATURDAY; day++)
+    {
+        switch(day)
+        {
+            case SUNDAY:
+                printf("SUNDAY = %d\n", day);
+                break;
+
+            case MONDAY:
+                printf("MONDAY = %d\n", day);
+                break;
+
+            case TUESDAY:
+                printf("TUESDAY = %d\n", day);
+                break;
+
+            case WEDNESDAY:
+                printf("WEDNESDAY = %d\n", day);
+                break;
+
+            case THURSDAY:
+                printf("THURSDAY = %d\n", day);
+                break;
+
+            case FRIDAY:
+                printf("FRIDAY = %d\n", day);
+                break;
+
+            case SATURDAY:
+                printf("SATURDAY = %d\n", day);
+                break;
+        }
+    }
+
+    return 0;
+}
